@@ -790,7 +790,7 @@ def run_simulation(input_filename,
             if (i_mod == 1
                 or (mod2mod_variation
                     and light_lut != light_lut_filename[i_mod-2])):
-                        lut = np.load(light_lut)['arr']
+                lut = np.load(light_lut)['arr']
 
                 # check if the light LUT matches with the number of optical channels
                 # lut (x, y, z, n_op_ch) for one TPC
